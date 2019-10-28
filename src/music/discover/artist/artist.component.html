@@ -1,0 +1,126 @@
+<!-- 歌手 -->
+<div class="artist clearfix">
+    <div class="artist-nav">
+        <div class="artist-nav-title">
+            <p>推荐歌手</p>
+            <div class="artist-nav-list">
+                <ul>
+                    <li>
+                        <span>.</span>
+                        <a href="">
+
+                            <span> 推荐</span>
+                        </a>
+                    </li>
+                    <li>
+                        <span>.</span>
+                        <a href="">
+                            <span> 入驻歌手</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="artist-nav-title">
+            <p>推荐歌手</p>
+            <div class="artist-nav-list">
+                <ul>
+                    <li>
+                        <span>.</span>
+                        <a href="">
+                            <span> 推荐</span>
+                        </a>
+                    </li>
+                    <li>
+                        <span>.</span>
+                        <a href="">
+                            <span> 入驻歌手</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="artist-nav-title">
+            <p>推荐歌手</p>
+            <div class="artist-nav-list">
+                <ul>
+                    <li>
+                        <span>.</span>
+                        <a href="">
+                            <span> 推荐</span>
+                        </a>
+                    </li>
+                    <li>
+                        <span>.</span>
+                        <a href="">
+                            <span> 入驻歌手</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div class="artist-model">
+        <div class="artist-model-top">
+            <div class="artist-model-title clearfix">
+                <a href="">更多></a>
+                <span>
+                    <b>入驻歌手</b>
+                </span>
+            </div>
+            <ul class="artist-model-top-ul">
+                <li *ngFor="let artist of artists">
+                    <div class="artist-model-top-img">
+                        <img width="130" height="130" src="{{artist?.img1v1Url}}" alt="">
+                        <a href=""></a>
+                    </div>
+                    <p>
+                        <a href="" title="{{artist?.name}}的个人主页">
+                            <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                        </a>
+                        <a href="">{{artist?.name}}</a>
+                    </p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="artist-model-top">
+            <div class="artist-model-title clearfix">
+                <a href="">更多></a>
+                <span>
+                    <b>热门歌手</b>
+                </span>
+            </div>
+            <ul class="artist-model-top-ul">
+                <li *ngFor="let artist of artists">
+                    <div class="artist-model-top-img">
+                        <img width="130" height="130" src="{{artist?.img1v1Url}}" alt="">
+                        <a href=""></a>
+                    </div>
+                    <p>
+                        <a href="" title="{{artist?.name}}的个人主页">
+                            <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                        </a>
+                        <a href="">{{artist?.name}}</a>
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="artist-model-list">
+            <ul>
+                <li *ngFor="let artistList of artistLists">
+
+                    <a href="" title="{{artistList?.name}}的个人主页">
+                        <span>{{artistList?.name}}</span>
+                    </a>
+                    <a href="">
+                        <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

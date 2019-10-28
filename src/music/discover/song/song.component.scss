@@ -1,0 +1,124 @@
+// 数据错误显示
+.erro {
+    width: 980px;
+    height: 780px;
+    margin-left: auto;
+    margin-right: auto;
+    border-left: 1px solid rgb(187, 186, 186);
+    border-right: 1px solid rgb(184, 180, 180);
+    background: white;
+    p {
+        width: 978px;
+        font-size: 30px;
+        text-align: center;
+    }
+}
+
+.thisSong {
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    border-left: 1px solid rgb(184, 180, 180);
+    border-right: 1px solid rgb(184, 180, 180);
+    background: white;
+    .song {
+        width: 707px;
+        padding: 50px 26px 50px 40px;
+        float: left;
+        border-right: 1px solid rgb(184, 180, 180);
+        .song-title {
+            width: 640px;
+        }
+    }
+    .otherSong {
+        width: 270px;
+        float: right;
+    }
+}
+
+.song-title {
+    .song-title-img {
+        position: relative;
+        height: 206px;
+        width: 206px;
+        float: left;
+        border-radius: 103px;
+        background: url(../../../assets/imgs/download/coverall.png) no-repeat -145px -585px !important;
+        div {
+            position: absolute;
+            top: 35px;
+            left: 35px;
+            width: 130px;
+            height: 130px;
+            border-radius: 65px;
+            img {
+                border-radius: 65px;
+            }
+        }
+    }
+    .song-title-title {
+        float: right;
+        width: 415px;
+    }
+}
+
+.song-title-details {
+    width: 415px;
+    .song-title-details-t {
+        p:nth-child(1) {
+            span:nth-child(1) {
+                display: inline-block;
+                height: 24px;
+                width: 54px;
+                margin-right: 5px;
+                background: url(../../../assets/imgs/download/icon.png) no-repeat 0px -185px !important;
+            }
+            span:nth-child(2) {
+                display: inline-block;
+                font-size: 21px;
+                height: 24px;
+                width: 330px;
+                line-height: 24px;
+                white-space: nowrap; // 防止输入字符过长影响布局，阻止换行
+                overflow: hidden; // 防止输入字符过长影响布局，隐藏内容
+                text-overflow: ellipsis; // 防止输入字符过长影响布局，溢出部分替换为...
+            }
+        }
+        p:nth-child(2) {
+            margin-left: 60px;
+            width: 330px;
+            font-size: 14px;
+            color: #ccc;
+        }
+    }
+    >p {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .song-title-bt {
+        margin-top: 10px;
+        margin-bottom: 30px;
+        height: 40px;
+        width: 200px;
+        background: rgb(6, 167, 231);
+        border-radius: 3px;
+    }
+}
+
+.song-lyric {
+    width: 415px;
+    div {
+        height: 200px;
+        overflow: hidden;
+        p{
+            line-height: 20px;
+        }
+    }
+    .openClose {
+        height: auto !important;
+    }
+    a:hover {
+        cursor: pointer;
+    }
+}
+

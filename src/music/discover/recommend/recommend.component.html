@@ -1,0 +1,308 @@
+<!-- 推荐 -->
+<div class="wrap">
+    <div class="wrap-carousel">
+        <div class="my-carousel">
+            <carousel>
+                <slide>
+                    <a href="">
+                        <img src="http://p1.music.126.net/pGEfHqRglm3s7D7e__N5yg==/109951163117191849.jpg" style="display: block; width: 100%;">
+                    </a>
+                </slide>
+                <slide>
+                    <a href="">
+                        <img src="http://p1.music.126.net/ztnxXsWYEPycZJCAhNQKFg==/109951163117625565.jpg" style="display: block; width: 100%;">
+                    </a>
+                </slide>
+                <slide>
+                    <a href="">
+                        <img src="http://p1.music.126.net/qeIK5JuzBOdA8ab9KtpgXw==/109951163117624170.jpg" style="display: block; width: 100%;">
+                    </a>
+                </slide>
+                <slide>
+                    <a href="">
+                        <img src="http://p1.music.126.net/IEOjdxYprU8IxGAJaBQXMw==/109951163117354348.jpg" style="display: block; width: 100%;">
+                    </a>
+                </slide>
+                <slide>
+                    <a href="">
+                        <img src="http://p1.music.126.net/78klyfpq-ehARBXZyoK-Dg==/109951163122788649.jpg" style="display: block; width: 100%;">
+                    </a>
+                </slide>
+                <slide>
+                    <a href="">
+                        <img src="http://p1.music.126.net/ZfwaNLPQc8kyc790iQAHYA==/109951163122788565.jpg" style="display: block; width: 100%;">
+                    </a>
+                </slide>
+
+            </carousel>
+        </div>
+        <div class="wrap-download">
+            <div>
+                <a title="下载客户端">
+                </a>
+            </div>
+            <p>PC 安卓 iPhone WP iPad Mac 六大客户端</p>
+        </div>
+    </div>
+</div>
+
+<div class="recommend-module clearfix">
+    <div class="recommend-module-left clearfix">
+        <div class="module-content">
+            <div class="module-content-title">
+                <i class="fa fa-circle-o mo-content-title-i"></i>
+                <a class="mo-content-title-a" href="#">热门推荐</a>
+                <ul class="list-inline mo-content-title-ul">
+                    <li>
+                        <a href="#">华语</a>
+                    </li>
+                    <span>|</span>
+                    <li>
+                        <a href="#">流行</a>
+                    </li>
+                    <span>|</span>
+                    <li>
+                        <a href="#">摇滚</a>
+                    </li>
+                    <span>|</span>
+                    <li>
+                        <a href="#">民谣</a>
+
+                    </li>
+                    <span>|</span>
+                    <li>
+                        <a href="#">电子</a>
+                    </li>
+                </ul>
+                <p class="mo-content-title-p">
+                    <a href="">更多</a>
+                    <i class="fa fa-arrow-right"></i>
+                </p>
+            </div>
+            <div class="module-content-showHot">
+                <ul>
+                    <li class="showHot-list" *ngFor="let personalized of personalizeds">
+                        <div class="showHot-list-img">
+                            <img height="140" width="140" src="{{personalized?.picUrl}}" alt="{{personalized?.name}}">
+                            <a href="#" title="{{personalized?.name}}"></a>
+                            <div>
+                                <p class="showHot-list-p1">
+                                    <i class="fa fa-headphones"></i><span>{{personalized.playCount}}</span>
+                                </p>
+                                <p class="showHot-list-p2">
+                                    <i class="fa fa-play-circle-o"></i>
+                                </p>
+                            </div>
+                        </div>
+                        <p>
+                            <a href=""> {{personalized?.name}}</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="module-content">
+            <div class="module-content-title">
+                <i class="fa fa-circle-o mo-content-title-i"></i>
+                <a class="mo-content-title-a" href="#">新碟上架</a>
+                <p class="mo-content-title-p">
+                    <a href="">更多</a>
+                    <i class="fa fa-arrow-right"></i>
+                </p>
+            </div>
+            <div class="module-content-showNew">
+                <ul class="showNew showNew-one">
+                    <li *ngFor="let topAlbum of topAlbumsOne">
+                        <a class="showNew-a" href="">
+                            <img src="{{topAlbum?.picUrl}}" alt="">
+                        </a>
+                        <p>
+                            <a href="">{{topAlbum?.name}} </a>
+                        </p>
+                        <p>
+                            <a href="">{{topAlbum?.name}} </a>
+                        </p>
+                    </li>
+                </ul>
+                <ul class="showNew showNew-two">
+                    <li *ngFor="let topAlbum of topAlbumsTwo">
+                        <a class="showNew-a" href="">
+                            <img src="{{topAlbum?.picUrl}}" alt="">
+                        </a>
+                        <p>
+                            <a href="">{{topAlbum?.name}} </a>
+                        </p>
+                        <p>
+                            <a href="">{{topAlbum?.name}} </a>
+                        </p>
+
+                    </li>
+                </ul>
+                <ul class="showNew showNew-three">
+                    <li *ngFor="let topAlbum of topAlbumsThree">
+                        <a class="showNew-a" href="">
+                            <img src="{{topAlbum?.picUrl}}" alt="">
+                        </a>
+                        <p>
+                            <a href="">{{topAlbum?.name}} </a>
+                        </p>
+                        <p>
+                            <a href="">{{topAlbum?.name}} </a>
+                        </p>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="module-content">
+            <div class="module-content-title">
+                <i class="fa fa-circle-o mo-content-title-i"></i>
+                <a class="mo-content-title-a" href="#">榜单</a>
+                <p class="mo-content-title-p">
+                    <a routerLink="/music/discover/toplist">更多</a>
+                    <i class="fa fa-arrow-right"></i>
+                </p>
+            </div>
+            <div class="module-content-showTop">
+                <div class="showTop">
+                    <ul>
+                        <li>
+                            <div class="showTop-title">
+                                <div class="showTop-title-img">
+                                    <a href="#">
+                                        <img src="http://p4.music.126.net/DrRIg6CrgDfVLEph9SNh7w==/18696095720518497.jpg?param=100y100" alt="">
+                                        <a href=""></a>
+                                    </a>
+                                </div>
+
+                                <div>
+                                    <p class="showTop-title-title">音乐云飙升榜</p>
+                                    <p class="showTop-title-p">
+                                        <i class="fa fa-play-circle-o"></i>
+                                        <i class="fa fa-plus-square-o"> </i>
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li *ngFor="let topList of topLists;let topindex=index" class="showTop-list">
+                            <span [style.color]="(topindex==0 || topindex==1 || topindex==2) ? 'red' : '#666'">{{topindex+1}}</span>
+                            <a routerLink="/music/discover/song" [queryParams]="{id:topList.id}">{{topList.name}}</a>
+                            <div>
+                                <i class="fa fa-play-circle-o"></i>
+                                <i class="fa fa-plus"></i>
+                                <i class="fa fa-plus-square-o"> </i>
+                            </div>
+                        </li>
+                        <li class="showTop-last">
+                            <a routerLink="/music/discover/toplist">查看全部></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="showTop">
+                    <ul>
+                        <li>
+                            <div class="showTop-title">
+                                <div class="showTop-title-img">
+                                    <a href="#">
+                                        <img src="http://p3.music.126.net/N2HO5xfYEqyQ8q6oxCw8IQ==/18713687906568048.jpg?param=100y100" alt="">
+                                        <a href=""></a>
+                                    </a>
+                                </div>
+                                <div>
+                                    <p class="showTop-title-title">音乐云新歌榜</p>
+                                    <p class="showTop-title-p">
+                                        <i class="fa fa-play-circle-o"></i>
+                                        <i class="fa fa-plus-square-o"> </i>
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li *ngFor="let topNew of topNews; let topindex=index" class="showTop-list">
+                            <span [style.color]="(topindex==0 || topindex==1 || topindex==2) ? 'red' : '#666'">{{topindex+1}}</span>
+                            <a routerLink="/music/discover/song" [queryParams]="{id:topNew.id}">{{topNew.name}}</a>
+                            <div>
+                                <i class="fa fa-play-circle-o"></i>
+                                <i class="fa fa-plus"></i>
+                                <i class="fa fa-plus-square-o"> </i>
+                            </div>
+                        </li>
+                        <li class="showTop-last">
+                            <a routerLink="/music/discover/toplist">查看全部></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="showTop">
+                    <ul>
+                        <li>
+                            <div class="showTop-title">
+                                <div class="showTop-title-img">
+                                    <a href="#">
+                                        <img src="http://p3.music.126.net/sBzD11nforcuh1jdLSgX7g==/18740076185638788.jpg?param=100y100" alt="">
+                                        <a href=""></a>
+                                    </a>
+                                </div>
+                                <div>
+                                    <p class="showTop-title-title">网易原创歌曲榜</p>
+                                    <p class="showTop-title-p">
+                                        <i class="fa fa-play-circle-o"></i>
+                                        <i class="fa fa-plus-square-o"> </i>
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li *ngFor="let topOrigina of topOriginas ;let topindex=index" class="showTop-list">
+                            <span [style.color]="(topindex==0 || topindex==1 || topindex==2) ? 'red' : '#666'">{{topindex+1}}</span>
+                            <a routerLink="/music/discover/song" [queryParams]="{id:topOrigina.id}">{{topOrigina.name}}</a>
+                            <div>
+                                <i class="fa fa-play-circle-o"></i>
+                                <i class="fa fa-plus"></i>
+                                <i class="fa fa-plus-square-o"> </i>
+                            </div>
+                        </li>
+                        <li class="showTop-last">
+                            <a routerLink="/music/discover/toplist">查看全部></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="recommend-module-right">
+        <div class="module-login">
+            <p>登录网易云音乐，可以享受无限收藏的乐趣，并且无限同步到手机</p>
+            <a href="">用户登录</a>
+        </div>
+        <div class="hot-artists">
+            <div class="hot-artists-title">
+                <p>
+                    <b>热门歌手</b>
+                </p>
+                <a href="">查看全部></a>
+            </div>
+            <div class="hot-artists-list">
+                <ul>
+                    <li *ngFor="let topArtist of topArtists">
+                        <a href="">
+                            <img src="{{topArtist.img1v1Url}}" alt="">
+                            <div>
+                                <p>
+                                    <b>{{topArtist.name}}</b>
+                                </p>
+                                <p>歌手信息暂无</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="hot-artists-apply">
+                <a href="">
+                    <b> 申请成为网易音乐人</b>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
